@@ -2,36 +2,44 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--visualizar el ancho de la pantalla-->
     <title>Data Lover 2.0 Harry Potter</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!--cuerpo la parte izquierda-->
-    <div>
-      <img>
+    <section class="sección-logo">
+      <img src= "https://1000logos.net/wp-content/uploads/2017/02/Harry-Potter-Logo.png" width="300">
       <h2>Ordenar por edad</h2>
-         <button>Ascendente</button>
-         <button>Descendente</button>
-      <h3>Filtrar por</h3>
-      <select "Genero">
+         <p>Ascendente</p>
+         <p>Descendente</p>
+      <h2>Filtrar por</h2>
+      <label for="generos">Genero</label>
+      <select id="generos">
          <option>female</option>
          <option>male</option>
       </select>
-      <select "Rol">
+      <label for="rol">Rol</label>
+      <select id="rol">
          <option>student</option>
          <option>staff</option>
       </select>
-      <select "casa" class="center">
+      <label for="casa">Casa</label>
+      <select id="casa" class="center">
           <option>Gryffindor</option>
           <option>Slytherin</option>
           <option>Ravenclaw</option>
           <option>Hufflepuff</option>
       </select>
-    </div>
+    </section>
     <!--cuerpo la parte derecha-->
-    <div>
+    <section class ="sección-personajes">
       <h1>PERSONAJES DE LA SAGA DE HARRY POTTER</h1> 
-    </div>
+      <div>
+        contenedor
+      </div>
+
+    </section>
    
       <main id="root">
     
