@@ -4,45 +4,79 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--visualizar el ancho de la pantalla-->
     <title>Data Lover 2.0 Harry Potter</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!--cuerpo la parte izquierda-->
-    <section class="sección-logo">
-      <img src= "https://1000logos.net/wp-content/uploads/2017/02/Harry-Potter-Logo.png" width="300">
+    <section class="seccion-logo">
+      <img src="https://1000logos.net/wp-content/uploads/2017/02/Harry-Potter-Logo.png" class="logo">
       <h2>Ordenar por edad</h2>
-         <p>Ascendente</p>
-         <p>Descendente</p>
+      <a href="#" class="ordenar">⬆️ Ascendente</a>
+      <a href="#" class="ordenar">⬇️ Descendente</a>
       <h2>Filtrar por</h2>
-      <label for="generos">Genero</label>
-      <select id="generos">
-         <option>female</option>
-         <option>male</option>
-      </select>
-      <label for="rol">Rol</label>
-      <select id="rol">
-         <option>student</option>
-         <option>staff</option>
-      </select>
+      <div class="filtro">
+        <label for="generos">Genero</label>
+        <select id="generos">
+          <option value="female">female</option>
+          <option value="male">male</option>
+        </select>
+      </div>
+      <div class="filtro">
+        <label for="rol">Rol</label>
+        <select id="rol">
+          <option value="student">student</option>
+          <option value="staff">staff</option>
+        </select>
+      </div>
+      <div class="filtro">
       <label for="casa">Casa</label>
       <select id="casa" class="center">
-          <option>Gryffindor</option>
-          <option>Slytherin</option>
-          <option>Ravenclaw</option>
-          <option>Hufflepuff</option>
+        <option value="gryffindor">Gryffindor</option>
+        <option value="slytherin">Slytherin</option>
+        <option value="ravenclaw">Ravenclaw</option>
+        <option value="hufflepuff">Hufflepuff</option>
       </select>
+      </div>
     </section>
     <!--cuerpo la parte derecha-->
-    <section class ="sección-personajes">
-      <h1>PERSONAJES DE LA SAGA DE HARRY POTTER</h1> 
-      <div>
-        contenedor
+    <main id="root" class="seccion-personajes">
+      <h1>PERSONAJES DE LA SAGA DE HARRY POTTER</h1>
+      <div id="personajes">
+        <div class="personaje">
+          <img src="http://hp-api.herokuapp.com/images/harry.jpg"/>
+          <h3>Harry Potter</h3>
+          <p>Gryffindor</p>
+          <div>
+            <img/>
+            <div>
+              <P>Especie</P>
+              <p>Human</p>
+            </div>
+          </div>
+          <div>
+            <img/>
+            <div>
+              <p>Rol</p>
+              <p>Estudiante</p>
+            </div>
+          </div>
+          <div>
+            <img/>
+            <div>
+              <p>Edad</p>
+              <p>38</p>
+            </div>
+          </div>
+          <div>
+            <img/>
+            <div>
+              <p>Actor</p>
+              <p>Daniel Radcliffe</p>
+            </div>
+          </div>
+        </div>
       </div>
-
-    </section>
-   
-      <main id="root">
-    
     </main>
     <script src="data.js"></script>
     <script src="main.js"></script>

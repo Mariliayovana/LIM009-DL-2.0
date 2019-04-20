@@ -10,14 +10,15 @@ const dataPotter = () => {
   }).then(function(data){
     pintarDatos(data)
   })
-  
+
 
 };
 
 
 const pintarDatos = (data) => {
   for(let i=0; i< data.length; i++){
-    
+
+
     console.log(data[i].name)
     console.log(data[i].species)
   }
