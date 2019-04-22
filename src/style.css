@@ -54,9 +54,30 @@ text-align: center;
 .personaje img {
   border-radius: 50%;
 }
-
-@media(max-width: 560px){
-  body{
-    background: yellow;
+/*
+@media only screen and (min-width: 768px) and(max-width:940px){
+  .seccion-logo {
+    width: 25%;
   }
+  .seccion-personajes{
+    width: 75%;
+  }  
 }
+
+@media only screen and (min-width: 768px) and(max-width:940px){
+  .seccion-logo {
+    width: 25%;
+  }
+  .seccion-personajes{
+    width: 75%;
+  }  
+}
+@media only screen and (min-width: 400px) and(max-width:767px){
+  .seccion-logo {
+    width: 25%;
+  }
+  .seccion-personajes{
+    width: 75%;
+  }  
+}
+/*
