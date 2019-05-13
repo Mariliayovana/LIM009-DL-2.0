@@ -25,7 +25,7 @@ const dataPotter = (data) => {
   let mostrar = "";
   data.forEach((element) => {
     mostrar += `
-    <section class ="col-xs-6 col-sm-6 col-md-6 col-lg-4">
+    <section class ="col-xs-6 col-sm-6 col-md-4 col-lg-4">
       <div class="personaje">
         <div class="caja-fotos">
           <img class ="fotos" src = ${element.image} >
