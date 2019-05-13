@@ -71,17 +71,14 @@ const dataPotter = (data) => {
 };
 
 const mostrarRol = (personaje) => {
-
-  if(personaje.hogwartsStudent) {
-    return "Student"
+  if (personaje.hogwartsStudent) {
+    return "Student";
+  } else if (personaje.hogwartsStaff) {
+    return "Staff";
+  } else {
+    return "-";
   }
-  else if(personaje.hogwartsStaff) {
-    return "Staff"
-  }
-  else {
-    return "-" 
-  }
-}
+};
 
 const imprimirGenero = (data) => {
   genero.addEventListener('change', () => {
